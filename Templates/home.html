@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% extends 'base.html' %}
+
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    {% block content %}
+    <div>
+        {% for post in post_list %}
+            <h2><a href="{% url 'post' post.pk %}">{{ post.title }}</a></h2>
+            <p>{{ post.body }}</p>
+            <h4>{{ post.author }}</h4>
+        {% endfor %}
+
+    </div>
+    {% endblock content %}
+
+</body>
+
+</html>

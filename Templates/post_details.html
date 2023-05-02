@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+
+<head>
+
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    {% block content %}
+        <h2>{{post.title}}</h2>
+        <h3>{{post.body}}</h3>
+        <h4>{{post.author}} </h4>
+    {% endblock content %}
+</body>
+
+
+</html>
