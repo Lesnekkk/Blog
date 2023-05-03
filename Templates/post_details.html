@@ -12,6 +12,9 @@
         <h2>{{post.title}}</h2>
         <h3>{{post.body}}</h3>
         <h4>{{post.author}} </h4>
+    <h4><a href="{% url 'edit_post' post.pk %}">Edit Post</a></h4>
+
+    <p><a href="{% url 'delete_post' post.pk %}">+ Delete Blog Post</a></p>
     {% endblock content %}
 </body>
 

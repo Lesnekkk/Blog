@@ -8,6 +8,8 @@
 </head>
 <body>
   <h1><a class="top"  href="{% url  'home'  %}">LESNEKK'S BLOG</a></h1>
+  <a class="top_new" href="{% url 'new_post' %}">+ New Blog Post</a>
+
   <div>
     {% block content  %}
     {% endblock content %}
